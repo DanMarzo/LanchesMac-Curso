@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Aulas externas\\CSharp\\Udemy\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac.csproj": {}
+    "D:\\Aulas externas\\CSharp\\Udemy\\LanchesMac\\LanchesMac\\LanchesMac.csproj": {}
   },
   "projects": {
-    "D:\\Aulas externas\\CSharp\\Udemy\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac.csproj": {
+    "D:\\Aulas externas\\CSharp\\Udemy\\LanchesMac\\LanchesMac\\LanchesMac.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Aulas externas\\CSharp\\Udemy\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac.csproj",
+        "projectUniqueName": "D:\\Aulas externas\\CSharp\\Udemy\\LanchesMac\\LanchesMac\\LanchesMac.csproj",
         "projectName": "LanchesMac",
-        "projectPath": "D:\\Aulas externas\\CSharp\\Udemy\\LanchesMac\\LanchesMac\\LanchesMac\\LanchesMac.csproj",
+        "projectPath": "D:\\Aulas externas\\CSharp\\Udemy\\LanchesMac\\LanchesMac\\LanchesMac.csproj",
         "packagesPath": "C:\\Users\\DanMarzoGil\\.nuget\\packages\\",
-        "outputPath": "D:\\Aulas externas\\CSharp\\Udemy\\LanchesMac\\LanchesMac\\LanchesMac\\obj\\",
+        "outputPath": "D:\\Aulas externas\\CSharp\\Udemy\\LanchesMac\\LanchesMac\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
