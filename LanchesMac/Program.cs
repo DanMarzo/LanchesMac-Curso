@@ -33,3 +33,6 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+
+//Existe uma falha no model, coloquei nome errado talvez isso possa afeta futuramente, então não apague as migrations
