@@ -13,7 +13,7 @@ public class LancheRepository : ILancheRepository
 
     public IEnumerable<Lanche> LanchesPreferidos => _context.Lanches
         .Where(x => x.IsLanchePreferido)
-        .Include(c => c.CategoriaId);
+        .Include(c => c.Categoria);
 
     public Lanche GetLancheById(int id)
     {
