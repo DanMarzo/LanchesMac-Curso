@@ -1,18 +1,18 @@
 using LanchesMac.Context;
 using LanchesMac.Models;
 using LanchesMac.Repository;
-using LanchesMac.Repository.Intefaces;
+using LanchesMac.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+    builder.Services.AddTransient<ILancheRepository, LancheRepository>();
+    builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-    builder.Services.AddTransient<ILancheRepository, LancheRepository>();
-    builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoLocalEmpresa"));
 });
 
 

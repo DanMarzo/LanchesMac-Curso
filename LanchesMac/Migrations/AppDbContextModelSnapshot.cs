@@ -91,7 +91,7 @@ namespace LanchesMac.Migrations
 
                     b.HasIndex("CategoriaId");
 
-                    b.ToTable("Laches");
+                    b.ToTable("Lanches");
                 });
 
             modelBuilder.Entity("LanchesMac.Models.Lanche", b =>
