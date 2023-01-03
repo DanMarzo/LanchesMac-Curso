@@ -15,6 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        TempData["NomeTeste"] = "Thiagão";
         return View();
     }
     public IActionResult Demo()
