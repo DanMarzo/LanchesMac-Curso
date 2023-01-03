@@ -1,19 +1,28 @@
 ﻿@model IEnumerable<LanchesMac.Models.Lanche>
 
-@{ ViewBag.title = "Lista de alimento"; }
+@{
+    ViewBag.title = "Lista de alimento"; @*Layout = null;*@
+}
 
 <div>
+    @*
     <h2>@ViewData["Titulo"]</h2>
     <h6>@ViewBag.Lanches @ViewBag.TotalLanche</h6>
-
     <h6>@TempData["NomeTeste"]</h6>
-</div>
+    *@
 
-@foreach(var lanche in Model)
-{
-    <div>
-        <h4>@lanche.Nome</h4>
-        <p><img src="@lanche.ImagemUrl"></p>
-        <p>@lanche.DescricaoCurta</p>
+    <h2>Lanches</h2>
+</div>
+<div class="container">
+    <div class="row">
+        @foreach(var lanche in Model)
+        {
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <p><img src="@lanche.ImagemUrl" class="img-fluid"></p>
+                <h3>@lanche.Nome</h3>
+                <h3>@lanche.Preco.ToString("c")</h3>
+                <p>@lanche.DescricaoCurta</p>
+            </div>
+        }
     </div>
-}
+</div>

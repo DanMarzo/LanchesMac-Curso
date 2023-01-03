@@ -13,12 +13,12 @@ public class LancheController : Controller
 
     public IActionResult List()
     {
-        ViewData["Titulo"] = "Listando Lanches";
+        /*ViewData["Titulo"] = "Listando Lanches";
         ViewData["Data"] = DateTime.Now;
-
-        var lanches = _lancheRepository.Lanches;
         ViewBag.Lanches = "Total de Lanches: ";
-        ViewBag.TotalLanche = lanches.Count();
+        ViewBag.TotalLanche = lanches.Count();*/
+        
+        var lanches = _lancheRepository.Lanches;
         return View(lanches);
     }
 }
