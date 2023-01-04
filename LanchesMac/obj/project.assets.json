@@ -10510,23 +10510,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DanMarzoGil\\.nuget\\packages\\": {},
-    "D:\\Arquivos de Programas\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Suporte4\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Aulas externas\\CSharp\\Udemy\\LanchesMac-Curso\\LanchesMac\\LanchesMac.csproj",
+      "projectUniqueName": "C:\\Users\\Suporte4\\Desktop\\Projetos\\Udemy\\Lanches-Macoratti\\LanchesMac\\LanchesMac.csproj",
       "projectName": "LanchesMac",
-      "projectPath": "D:\\Aulas externas\\CSharp\\Udemy\\LanchesMac-Curso\\LanchesMac\\LanchesMac.csproj",
-      "packagesPath": "C:\\Users\\DanMarzoGil\\.nuget\\packages\\",
-      "outputPath": "D:\\Aulas externas\\CSharp\\Udemy\\LanchesMac-Curso\\LanchesMac\\obj\\",
+      "projectPath": "C:\\Users\\Suporte4\\Desktop\\Projetos\\Udemy\\Lanches-Macoratti\\LanchesMac\\LanchesMac.csproj",
+      "packagesPath": "C:\\Users\\Suporte4\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Suporte4\\Desktop\\Projetos\\Udemy\\Lanches-Macoratti\\LanchesMac\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Arquivos de Programas\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\DanMarzoGil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Suporte4\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

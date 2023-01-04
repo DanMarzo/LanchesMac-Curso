@@ -1,7 +1,7 @@
 ﻿using LanchesMac.Models;
 using LanchesMac.Repository.Interfaces;
+using LanchesMac.ViewModel;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace LanchesMac.Controllers;
 
@@ -17,8 +17,12 @@ public class LancheController : Controller
         ViewData["Data"] = DateTime.Now;
         ViewBag.Lanches = "Total de Lanches: ";
         ViewBag.TotalLanche = lanches.Count();*/
-        
-        var lanches = _lancheRepository.Lanches;
-        return View(lanches);
+
+        //var lanches = _lancheRepository.Lanches;
+        var lancheListViewModel = new LancheListViewModel();
+        lancheListViewModel.Lanches = _lancheRepository.Lanches;
+        lancheListViewModel.CategoriaAtual = "Categoria Frita";
+
+        return View(lancheListViewModel);
     }
 }
