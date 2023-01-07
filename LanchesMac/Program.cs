@@ -13,7 +13,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoLocalEmpresa"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoLocalDan"));
 });
 builder.Services.AddTransient<ILancheRepository, LancheRepository>();//
 builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
