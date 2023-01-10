@@ -8,15 +8,18 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddMemoryCache();//HABILITANDO O MEMORYCACHE
+builder.Services.AddSession();//AO USAR É NECESSÁRIO ATIVALO COM APP.USESESSION()
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoLocalDan"));
 });
 builder.Services.AddTransient<ILancheRepository, LancheRepository>();//
 builder.Services.AddTransient<ICategoriaRepository, CategoriaRepository>();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();//SINGLETON => VALE POR TODO TEMPO DE VIDA DA APLICAÇÃO 
+
 
 var app = builder.Build();
 
@@ -34,6 +37,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
